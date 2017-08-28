@@ -29,10 +29,6 @@ class CartController extends Controller {
     } else {
       $orders = [];
     }
-    // echo "<pre>";
-    // print_r($products);
-    // echo "</pre>";
-    // die;
     return view('pages.cart', compact('orders', 'cat', 'alias', 'products'));
   }
 
